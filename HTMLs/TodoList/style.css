@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(241, 162, 153);
+}
+
+#Todo1
+{
+    border: 3px dotted red;
+    color: red;
+}
+
+.Checked
+{
+    text-decoration: line-through;
+}

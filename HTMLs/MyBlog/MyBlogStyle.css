@@ -1,0 +1,45 @@
+body
+{
+    background-color: #2e2b2b;
+    padding: 20px;
+}
+
+.MainDiv{
+    border:15px solid #aca8a8;
+    width: 60%;
+    margin: 0 auto;
+    padding: 0px 40px;
+    font-family: 'Exo', sans-serif;
+    color:whitesmoke;
+}
+
+article{
+    border-bottom: 2px solid #aca8a8 ;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+.DateHeader
+{
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: yellow;
+}
+
+h2{
+    font-size: 2em;
+    color: #eeeaea;
+}
+
+section p:first-of-type
+{
+    border-left: 5px groove #aca8a8;
+    padding-left: 5px;
+}
+
+section p:first-of-type::first-letter
+{
+    font-weight: bold;
+    font-size: 2em;
+}

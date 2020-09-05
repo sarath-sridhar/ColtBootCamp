@@ -1,0 +1,24 @@
+h1
+{
+    color:red;
+    /* border-color: rgb(13, 168, 117);
+    border-width: 20px;
+    border-style: groove; */
+    border: 6px  dashed  rgb(22, 75, 1);
+
+}
+h2
+{
+    color: #3b0edf;
+}
+ol
+{
+    color:rgb(13, 168, 117);
+}
+
+body{
+    background-color: rgba(167, 15, 159,.3);
+    /* background: url();
+    background-repeat: no-repeat;
+    background-size: cover; */
+} 

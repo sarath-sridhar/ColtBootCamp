@@ -1,0 +1,10 @@
+p{
+    /* content width and height */
+     width: 50%; 
+    /* border config */
+    border:  10px dashed black ;
+    /* padding */
+    padding: 10px;
+    /* margin */
+    margin-left: 100px;
+}

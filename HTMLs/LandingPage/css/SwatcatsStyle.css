@@ -1,0 +1,32 @@
+body
+{
+   background-color: #0423bc;
+   color: #f80e1b;
+}
+
+.PageHeader
+{
+    font-size: 55px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top:2%;
+    text-align: center;
+}
+
+button
+{
+    background-color: #f80e1b;
+    color: blanchedalmond;
+    border: 0ex;
+    padding:  10px 40px;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 60px;
+}
+#Bingo
+{
+    margin: 
+}
+BlockQuoteFooter
+{
+    padding-left: 200px;   
+}
