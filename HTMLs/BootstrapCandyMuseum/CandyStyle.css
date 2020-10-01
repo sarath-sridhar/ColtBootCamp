@@ -1,0 +1,48 @@
+
+
+body{
+    background-color: #f1f5fa; 
+    font-family: 'Raleway', sans-serif; 
+}
+
+#mainNavbar
+{
+    font-family: 'Orbitron', sans-serif;
+    
+}
+
+#mainNavbar .navbar-brand{
+    font-weight: 900;
+    color:#393c41;
+}
+
+#mainNavbar .navbar-brand:hover{
+    color:#1b1f25;
+}
+
+#mainNavbar .nav-link{
+    color:#393c41;
+    font-weight: 700;
+}
+
+#mainNavbar .nav-link:hover{
+    color:#1b1f25;
+}
+
+#mainNavbar.scrolled {
+    background: rgba(162, 165, 175, 0.267);
+    transition: background 500ms;
+
+}
+
+/* updo 1600px do the action below */
+@media(min-width:1600px)
+{
+    h2{
+        font-size: 3rem;
+    }
+    p {
+        font-size: 2rem;
+    }
+}
+

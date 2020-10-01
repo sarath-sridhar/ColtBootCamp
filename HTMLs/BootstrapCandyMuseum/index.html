@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Museum</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="CandyStyle.css"> 
+    <script src="https://use.fontawesome.com/9bc96c2225.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Raleway:wght@500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <nav id="mainNavbar" class="navbar navbar-light navbar-expand-md py-0 fixed-top">
+        <a href="#" class="navbar-brand"> GTC Coder</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="toggleNavBar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navLinks">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Work</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container-fluid px-0">
+        <div class="row align-items-center ">
+            <div class="col-lg-6" style=""> 
+                <div class="text-center d-none d-lg-block mt-5">       
+                    <h2>No Code / Low Code</h2>
+                    <h2>No Code / Low Code</h2>
+                    <h2>No Code / Low Code</h2>
+                    <h2>No Code / Low Code</h2>
+                    <h2>No Code / Low Code</h2> 
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img class="img-fluid" src="Images/PSHandLg.jpg">
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid px-0 mt-2">
+        <div class="row align-items-center mt-1">
+            <div class="col-lg-6  order-2 order-lg-1">
+                <img class="img-fluid" src="Images/rubixLg.jpg">
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 text-center">
+                        <h2>Why No Code / Low Code?</h2>
+                        <p>I Use Low Code Platforms, So that I can concentrate on the buisiness solutions rather than worrying about my code and other laborious 
+                            tasks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid px-0 mt-2">
+        <div class="row align-items-center mt-1">
+            <div class="col-lg-6">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 text-center">
+                        <h2>Why I Use Graphite?</h2>
+                        <p>Graphite uses microsoft stack so I have freedom to deploy to any microsoft environment without
+                            having to use runtime environemnts. Helps me expose REST and SOAP services in a click of a button.
+                            I can view the source code of my application and Tons and Tons of more features available.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img class="img-fluid" src="Images/CoderLg.jpg">
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>
+
+    $(function () {
+        $(document).scroll(function(){
+            var $nav= $("#mainNavbar");
+            $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+
+        });
+    });
+
+        
+      
+    </script>
+</body>
+</html>
