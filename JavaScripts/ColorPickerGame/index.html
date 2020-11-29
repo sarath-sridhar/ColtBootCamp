@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/9bc96c2225.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Raleway:wght@500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="bg-dark text-white jumbotron p-1 m-0 text-center">
+    <h3 class="display-5">The Great</h2>
+    <h1 class="display-3 p-0" id="RGBQuestion">RGB color</h1>
+    <h3 class="display-5" >Guessing Game</h2>
+</div>
+
+<nav class="navbar navbar-light bg-light justify-content-center align-items-center">
+  <a class="nav-link" id="newQuiz" href="#">NewQuiz<span class="sr-only">(current)</span></a>
+    <span class="navbar-text" id="resultDisplayItem">
+    </span>
+    <div class="btn-group btn-group-toggle pl-2" data-toggle="buttons">
+        <label class="btn btn-dark">
+          <input type="radio" name="options" id="easy" autocomplete="off" checked> Easy
+        </label>
+        <label class="btn btn-dark active">
+          <input type="radio" name="options" id="hard" autocomplete="off"> Hard
+        </label>
+      </div>
+</nav>
+
+<div class="container">
+  <div class="tabletset1 d-flex justify-content-center" >
+    <span id="tablet1" class="tablet  border border-primary rounded m-3 p-4 "></span>
+    <span id="tablet2" class="tablet  border border-primary rounded m-3 p-4 "></span>
+    <span id="tablet3" class="tablet  border border-primary rounded m-3 p-4 "></span>
+  </div>
+  <div class="tabletset2 d-flex justify-content-center">
+    <span id="tablet4" class="tablet border border-primary rounded m-3 p-4 "></span>
+    <span id="tablet5" class="tablet border border-primary rounded m-3 p-4 "></span>
+    <span id="tablet6" class="tablet border border-primary rounded m-3 p-4 "></span>
+  </div>
+</div>
+
+<script src="ColorPicker.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

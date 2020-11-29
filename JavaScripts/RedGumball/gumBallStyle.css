@@ -8,6 +8,9 @@
     width:400px;
     height:600px;
     position: relative;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .doodler
@@ -23,6 +26,39 @@
 {
     background-color: blue;
     width:80px;
-    height:20px;
+    height:10px;
     position: absolute;
+}
+
+.gameOver
+{
+    color: rgba(133, 14, 14, 0.932);
+    position: absolute;
+    left:15%;
+    top:40%;
+    text-align: center;
+}
+.score
+{
+    color: rgba(133, 14, 14, 0.932);
+    position: absolute;
+    left:30%;
+    top:50%;
+    text-align: center;
+}
+.startButton
+{
+    background-color: rgb(233, 16, 27);
+    width:100px;
+    height:40px;
+    top:50%;
+    left:35%;
+    color: white;
+    position: absolute;
+    padding-top: 10px;
+    border-radius: 5%;
+    
+}   
+.startButton:hover{
+    cursor: pointer;
 }

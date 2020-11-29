@@ -1,0 +1,11 @@
+.tablet{
+    height: 140px;
+    width: 140px;
+}
+.tablet:hover{
+    cursor: pointer;
+    box-shadow: 0 5px rgba(104, 104, 104, 0.363);
+    transform: translateY(4px);
+    
+}
+
