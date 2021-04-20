@@ -5,13 +5,21 @@ var cars = [
 ];
 
 function displayCars() {
-  Cars.forEach(singleCar => {
-    console.log(singleCar);
-  });
+  setTimeout(()=>{
+    cars.forEach(singleCar => {
+      console.log(singleCar);
+    });
+  },3000);
 }
 
-function addCar(currentCar, myCallback) {
-  cars.push(currentCar);
-  myCallback();
+function addCar(currentCar,mycallBack ) {
+
+  setTimeout(()=>{
+    cars.push(currentCar);
+  },2000);
+  mycallBack();
 }
-addCar({ Model: "City", Warrenty: 3, Color: "White" }, displayCars);
+addCar({ Model: "City", Warrenty: 3, Color: "White" },displayCars);
+
+
+
