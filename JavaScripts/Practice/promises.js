@@ -1,3 +1,4 @@
+//Studies Promises
 var cars = [
   { Model: "Punto", Warrenty: 3, Color: "blue" },
   { Model: "Baleno", Warrenty: 2, Color: "red" }
