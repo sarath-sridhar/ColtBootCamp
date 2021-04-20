@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script src="https://use.fontawesome.com/9bc96c2225.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Raleway:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container d-flex justify-content-center" style="margin:6%">
+      <div class="card" style="width: 28rem">
+        <img
+          src="https://dbdzm869oupei.cloudfront.net/img/sticker/large/10870.jpg"
+          class="card-img-top"
+          alt="..."
+          style="height:300px"
+        />
+        <div class="card-body">
+          <h2 class="card-title" id="scoreBoard">0-0</h2>
+          <form action="" id="scoreCardForm">
+            <h3 id="maxScoreDisplay">Playing to</h3>
+            <label for="customRange2" class="form-label"></label>
+            <input
+              type="range"
+              class="form-range"
+              min="0"
+              max="10"
+              id="customRange2"
+            />
+            <br />
+            <button class="btn btn-primary" id="player1Button">
+              +1 for Player 1
+            </button>
+
+            <button class="btn btn-danger" id="player2Button">
+              +1 for Player 2
+            </button>
+            <button class="btn btn-secondary" id="resetButton">
+              Reset
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="ScoreKeeper.js"></script>
+  </body>
+</html>

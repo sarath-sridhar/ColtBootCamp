@@ -1,24 +1,21 @@
-// Build Map
-mapboxgl.accessToken = "pk.eyJ1Ijoic2FyYXRocyIsImEiOiJja2dxcmpua2owODVrMnFxdzJqazk0Y3FqIn0.3zP_RXiZ4FkwyDNXmlccqw";
+mapboxgl.accessToken =
+  "pk.eyJ1Ijoic2FyYXRocyIsImEiOiJja2dxcmpua2owODVrMnFxdzJqazk0Y3FqIn0.3zP_RXiZ4FkwyDNXmlccqw";
 
 // Map
 var map = new mapboxgl.Map({
   container: "map", // container id
   style: "mapbox://styles/mapbox/streets-v11", // style URL
   center: [80.27, 13.09], // starting position [lng, lat]
-  zoom: 9, // starting zoom
+  zoom: 9 // starting zoom
 });
 
-map.on("load", function () {
-
+map.on("load", function() {
   addDirections(map);
-  addClientmarker(map);
+  addClientMarker(map);
   addDCMarkers(map);
-  
 });
 
 function addDCMarkers(map) {
-  
   // Diagnostic Center
   var vijayaHospitalMarker = new mapboxgl.Marker();
   vijayaHospitalMarker.setLngLat([80.20829, 13.04958]);
@@ -32,16 +29,16 @@ function addDCMarkers(map) {
   return map;
 }
 
-function addClientmarker(map) {
-
+function addClientMarker(map) {
   //  Client Location (moveable Marker)
   var clientMarker = new mapboxgl.Marker({
     draggable: true,
+    color: "red"
   });
   clientMarker.setLngLat([80.21838068962099, 13.044492753397355]);
 
   //Movable Marker Event
-  clientMarker.on("dragend", function () {
+  clientMarker.on("dragend", function() {
     console.log("Movable marker location " + clientMarker.getLngLat());
   });
 
@@ -50,17 +47,15 @@ function addClientmarker(map) {
   return map;
 }
 
-//Directions -> Reference https://blog.mapbox.com/mapbox-gl-directions-plugin-320694594eae
 function addDirections(map) {
-
   // Direction Controls
   var directionControls = {
     inputs: true, // Default -> true
     instructions: true, // Default -> true
-    profileSwitcher: true, // Default -> true
+    profileSwitcher: true // Default -> true
   };
 
-  // Direction
+  // Direction Default configuration
   var directions = new MapboxDirections({
     accessToken: mapboxgl.accessToken,
     profile: "mapbox/walking",
@@ -68,7 +63,7 @@ function addDirections(map) {
     language: "ar",
     placeholderOrigin: "Choose Starting Point",
     placeholderDestination: "Choose Destination",
-    controls: directionControls,
+    controls: directionControls
   });
 
   map.addControl(directions, "top-left"); // Add Direction Control
